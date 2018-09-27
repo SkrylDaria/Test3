@@ -7,4 +7,7 @@ for i in range(0, len(string) - 1):
     else:
         print('{}{}'.format(string[i], amountOfSymbl), end='')
         amountOfSymbl = 1
-print('{}{}'.format(string[i + 1], amountOfSymbl))
+if len(string) > 1:
+    print('{}{}'.format(string[i + 1], amountOfSymbl))
+if len(string) == 1:
+    print(string, 1, sep='')
